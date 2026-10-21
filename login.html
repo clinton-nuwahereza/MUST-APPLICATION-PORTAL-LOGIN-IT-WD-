@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="login.css">
+        <title>
+            MUST APPLICATION PORTAL
+        </title>
+    </head>
+    <body>
+        <div class="portal">
+            <img src="image1.png" alt="MUST LOGO">
+            <h1>MBARARA UNIVERSITY OF SCIENCE AND TECHNOLOGY</h1>
+            <p>Online Application Portal</p>
+            
+            <div class="form">
+
+                <h3>Welcome Back!</h3>
+                <p>Login to access your application dashboard</p> 
+                
+                <form action="" method="post">
+                    <p>
+                    <label for="email">Email Address</label>
+                    <input type="email" name="signInEmail address" id="email" placeholder="name@example.com" required>
+                    </p>
+
+                    <p>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your Password" required>
+                    </p>
+
+                    <button type="submit" class="signin">Sign In</button>
+
+                    <p><a href="forgot" class="forgot">Forgot your password?</a></p>
+
+                </form>
+
+                <p>New to the portal?</p>
+
+                <button popovertarget="signUp" class="open-btn">Create Account</button>
+
+                <div id="signUp" popover class="popup-box">
+                
+                    <h2>Create Account</h2>
+                    <p>Provide your details to receive a temporary password.</p>
+
+                    <form action="" method="POST">
+                        
+                        <p>
+                            <label for="surname">Surname</label><br>
+                            <input type="text" id="surname" name="surname" placeholder="Surname" required>
+                        </p>
+
+                        <p>
+                            <label for="other_names">Other Names</label><br>
+                            <input type="text" id="otherNames" name="other_names" placeholder="Other names" required>
+                        </p>
+
+                        <p>
+                            <label for="phone">Phone Number</label><br>
+                            <select name="country_code" id="country_code">
+                                <option value="+256">Uganda (+256)</option>
+                            </select>
+                            <input type="tel" id="phone" name="phone" placeholder="770000000" required><br>
+    
+                            <small>Use an active phone number to receive notifications.</small>
+                        </p>
+
+                        <p>
+                            <label for="email">Email Address</label><br>
+                            <input type="email" id="signUpEmail" name="email" placeholder="myemail@gmail.com" required><br>
+                            
+                            <a href="https://google.com" target="_blank">Don't have an Email? Click to create ➔</a>
+                        </p>
+                        <hr>
+
+                        <p>
+        
+                            <button type="button" popovertarget="signUp" popovertargetaction="hide">Close</button>
+                        
+                            <button type="submit">Create Account</button>
+                        </p>
+
+                    </form>
+                </div>
+
+                    <p><a href="Apply" class="Apply">How to Apply</a></p>
+                    
+            </div>
+        </div>
+    </body>
+</html>
